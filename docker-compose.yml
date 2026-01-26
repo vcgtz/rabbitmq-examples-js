@@ -1,0 +1,13 @@
+services:
+  rabbitmq-nodejs:
+    image: rabbitmq:4.2.0-management
+    container_name: rabbitmq-nodejs
+    hostname: rabbitmq-nodejs
+
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=4dm1n
+
+    ports:
+      - "5672:5672"
+      - "15672:15672"
